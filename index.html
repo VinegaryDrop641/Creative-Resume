@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbiton Movie Set</title>
+    <meta name="author" content="Ian Smith">
+    <meta name="description" content="Home page showing main information and pictures">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    p {
+        padding-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        font-size: 1.5em;
+        background-color: rgba(0, 0, 0, .52);
+        line-height: 1.5em;   
+        width: 100%;
+    }
+
+    ul {
+        list-style: none;
+        font-size: 1.5em;
+    }
+
+    h2 {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border: 12px ridge rgb(94, 61, 30);
+        margin: 2em;
+        height: auto;
+        border-style: inset;
+        border-radius: 20em;
+        background-color: rgba(0, 0, 0, .52);
+        line-height: 1.5em;  
+    }
+
+</style>
+
+
+<body>
+    <nav class="Top-Bar" id="myBar">
+        <div class="flex-container">
+       <h1>Ian Smith</h1>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="knowledge.html"> What I Know</a></li>
+            <li><a href="experience.html"> My Experience</a></li>
+            </ul>
+        </div>
+        </nav>
+
+    <main id="main" class="container">
+        <div class="Title">
+            <h1>About Me</h1>
+        </div>
+    <p>Learning about the game industry in the beginning is, I admit, very overwhelming. Finding all the different pathways and different programs and applications makes me very confused. With all these different programs, I feel like I need to learn everything. I have made followers, created new spells, built homes, and changed the inner workings of games before, but to see how the whole process starts even before the opportunity to change the game appears, it is a bit mind-blowing. With these different programs and pathways, I do not know where to begin, but I keep thinking about the base reasons as to why I want to be in the gaming industry.
+    </p>
+    <p>In the beginning, before I even knew what I wanted to do with my life, I looked at what skills I have compared to other people. I looked at my artistic skills, my athletic skills, and many other skills that I thought I had. As I looked at those skills, I found many things that needed major improvement. I, then, decided that I should look at skills I know I am great with. The one skill that kept popping into my head was my knowledge and years of work with computers.
+    </p>
+    <p>After finding that a career with computers would be a great idea, I started thinking about what I can do with those skills. When looking at what hobbies I have, my immediate thought was how much I love and play all different kinds of video games. Knowing that videogames are made on computers, I thought that making video games would be a perfect career for me. I consider both aspects to be very fun hobbies, so it makes sense to choose a career that I want instead of a career that I put up with for the money.
+    </p>
+    <p>I started looking at many documentaries and videos online about working in the game industry and I loved what I was seeing. Hearing game developers talk about their jobs with such joy and happiness confirmed what I wanted to do in life. After looking at videos about working in the game industry, I wanted to see the effect that the game industry has on the consumers. What really inspired me to be in the gaming industry was the effect it had on the gamers. Hearing many stories about how they lost a very close family member or how they were going through a very tough time in their life, and how they turned to a specific video game of theirs and how it turned their life around made me want to be the cause of their hope. If I can make something that inspires hope into a lot of people, then that would be the perfect career for me.
+    </p>
+    <p>With my current career goal set, Now I had to think about what I want to do in the gaming industry. I started experimenting with many different careers as best as I could. I started with modding games like Skyrim and the Batman: Arkham series.
+    </p>
+    <p>Starting with the Batman: Arkham series, I started with making textures that would change Batman’s suit and, with the use of changing and applying those textures, tried to change the weather systems and lighting of the game. I liked that I was able to change the feelings the game gives off and how something I made changed a game that appeared to be unmoddable. After creating many mods, I started running out of ideas to test my creativity, so I tried something else.
+    </p>
+    <p>I already knew that Skyrim had a massive modding community, with Nexus Mods having 66.6 thousand mods and counting and a lot of them changing the game with different features or improvements. After acquiring the programs needed and watching many tutorials, I started making many mods that add new features to the game. The difference with modding the game this way compared to the Batman: Arkham series, was that I did not run out of ideas. I just kept making more and more mods that added new features into the game. When I decided that this was something I could do as a career and never grow tired of it, I started looking at careers related to these skills.
+    </p>
+    <div class="listing">
+    </div>
+    <footer>
+            <h3>Navigation</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="knowledge.html">What I Know</a></li>
+            <li><a href="experience.html">My Experience</a></li>
+        </ul>
+    </footer>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav")
+        .style.width = "100%";/*250px*/
+    }
+    function closeNav() {
+        document.getElementById("mySidenav")
+        .style.width = "0";
+    }
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var TopBar = document.getElementById("myBar");
+
+// Get the offset position of the navbar
+var sticky = TopBar.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    TopBar.classList.add("sticky");
+  } else {
+    TopBar.classList.remove("sticky");
+  }
+} 
+</script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbiton Movie Set</title>
+    <meta name="author" content="Ian Smith">
+    <meta name="description" content="Events page">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="Top-Bar" id="myBar">
+        <div class="flex-container">
+        <h1>Ian Smith</h1>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="knowledge.html"> What I Know</a></li>
+            <li><a href="experience.html"> My Experience</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+    </nav>
+
+    <main id="main" class="container">
+    
+        
+        <h1>My Experience</h1>
+        <h2>High School</h2>
+        <div class="col-1">
+            
+                <p>Throughout my time at Stebbins, I was enrolled in an Information Technology class. In this class, my friends and I were trusted enough to obtain elevated privileges and work in the school's IT department. For 4 years, I assisted in maintaining the school's servers, fixed hundreds of electronic devices, and took on a major role in starting the school's esports team.
+            </p>
+        </div>
+        
+        <h2>College</h2>
+        <div class="col-1">
+    
+                <p>During my time in college, I hope to go through many different opportunities. I would love to study abroad and do many different internships to get more experience in multiple fields of technology. With these experiences, I will improve 
+            </p>
+        </div>
+
+
+    <footer>
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="knowledge.html">What I Know</a></li>
+                <li><a href="experience.html">My Experience</a></li>
+            </ul>
+    </footer>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav")
+        .style.width = "100%";/*250px*/
+    }
+    function closeNav() {
+        document.getElementById("mySidenav")
+        .style.width = "0";
+    }
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var TopBar = document.getElementById("myBar");
+
+// Get the offset position of the navbar
+var sticky = TopBar.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    TopBar.classList.add("sticky");
+  } else {
+    TopBar.classList.remove("sticky");
+  }
+} 
+</script>
+    </main>
+</body>
+</html>
