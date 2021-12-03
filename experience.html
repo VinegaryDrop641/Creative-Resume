@@ -29,19 +29,17 @@
     
         
         <h1>My Experience</h1>
-        <h2>High School</h2>
-        <div class="col-1">
-            
-                <p>Throughout my time at Stebbins, I was enrolled in an Information Technology class. In this class, my friends and I were trusted enough to obtain elevated privileges and work in the school's IT department. For 4 years, I assisted in maintaining the school's servers, fixed hundreds of electronic devices, and took on a major role in starting the school's esports team.
+        <button class="accordion">High School</button>
+    <div class="panel">            
+            <p>Throughout my time at Stebbins, I was enrolled in an Information Technology class. In this class, my friends and I were trusted enough to obtain elevated privileges and work in the school's IT department. For 4 years, I assisted in maintaining the school's servers, fixed hundreds of electronic devices, and took on a major role in starting the school's esports team.
             </p>
-        </div>
+    </div>
         
-        <h2>College</h2>
-        <div class="col-1">
-    
-                <p>During my time in college, I hope to go through many different opportunities. I would love to study abroad and do many different internships to get more experience in multiple fields of technology. With these experiences, I will improve 
+    <button class="accordion">College</button>
+    <div class="panel">
+            <p>During my time in college, I hope to go through many different opportunities. I would love to study abroad and do many different internships to get more experience in multiple fields of technology. With these experiences, I will improve 
             </p>
-        </div>
+    </div>
 
 
     <footer>
@@ -78,6 +76,25 @@ function myFunction() {
   } else {
     TopBar.classList.remove("sticky");
   }
+} 
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 } 
 </script>
     </main>

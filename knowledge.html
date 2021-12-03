@@ -27,19 +27,18 @@
         
         <h1>What I Know</h1>
 
-        <h2>High School</h2>
-        <div class="col-1">
-                <p>In high school, I have learned a lot about technology. I have started to learn different programming languages and have learned multiple different subjects centered around customer support. Aside from computer skills, I have improved in many essential skills. These skills include time management, communication, leadership skills, and many processes that improve my work efficiency 
+        <button class="accordion">High School</button>
+<div class="panel">
+            <p>In high school, I have learned a lot about technology. I have started to learn different programming languages and have learned multiple different subjects centered around customer support. Aside from computer skills, I have improved in many essential skills. These skills include time management, communication, leadership skills, and many processes that improve my work efficiency 
             </p>
         </div>
-        <h2>College</h2>
-        <div class="col-1">
-    
-                <p>While at college, I hope to increase my knowledge of computers in general. Technology has been a huge part of me, so learning new skills and fine tuning what I already know is what I want to do through my entire life. I plan on taking many different classes, but mainly sticking with classes related to the Information Technology field.
+        <button class="accordion">College</button>
+<div class="panel">
+            <p>While at college, I hope to increase my knowledge of computers in general. Technology has been a huge part of me, so learning new skills and fine tuning what I already know is what I want to do through my entire life. I plan on taking many different classes, but mainly sticking with classes related to the Information Technology field.
             </p>
         </div>
-        <h2>Outside School</h2> 
-        <div class="col-1">
+        <button class="accordion">Outside School</button>
+        <div class="panel">
                 <p>Much of what I know has come from lessons outside of school. I have gone through many online lessons, videos, texts, etc. to learn new things. These things I have learned has ranged from learning basic programming, to running and maintaining my own servers for my family and friends. Other than online sources, I have also learned a lot from trying things on my own. Video games have been a huge inspiration for me to learn more about technology, so a lot of what I know now has stemmed from working on video games.
             </p>
         </div>
@@ -79,6 +78,26 @@ function myFunction() {
   } else {
     TopBar.classList.remove("sticky");
   }
+} 
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 } 
 </script>
     </main>
